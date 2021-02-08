@@ -5,23 +5,23 @@
 </head>
 <body>
 
-<script src = "play.js"></script>
+<script src="jquery-3.5.1.min.js"></script>
+<script src = "/Users/alikesserwani/Desktop/captionary/play.js"></script>
 
 <h1>Upload Images</h1>
 <br>
 
-<form>
-    <input type="file" id="image_one" name="image_one">
-  </form>
-<form>
-    <input type="file" id="image_two" name="image_two">
-</form>
-<form>
-    <input type="file" id="image_three" name="image_three">
-</form>
-<br>
 
-<button onClick = "upload_image" type="submit" >Submit Images</button>
+<form method=post action="/Users/alikesserwani/Desktop/captionary/play.js" enctype=multipart/form-data onSubmit="return upload_image()">
+    <input type=file name="image_one">
+    <br>
+    <input type=file name="image_two">
+    <br>
+    <input type=file name="image_three">
+    <br>
+    <br>
+    <input type="button" class="button" value="Upload Image" id="btn">
+</form>
 
 
 
