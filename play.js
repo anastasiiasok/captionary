@@ -1,6 +1,8 @@
 //Play.js
-function helloWorld(){
-    console.log("Hello World")
+
+
+
+function upload_image(){
+    console.log("Hello")
 }
 
-helloWorld()
