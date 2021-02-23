@@ -15,5 +15,16 @@ img {
   align-items: center;
   gap: 20px;
 }
+.preview-images {
+  display: flex;
+  max-height: 150px;
+  gap: 30px;
+}
 
+.preview-images__item img {
+  /* height: 100%;
+  width: 100%; */
+  /* object-fit: cover; */
+  
+}
 
