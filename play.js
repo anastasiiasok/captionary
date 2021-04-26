@@ -1,7 +1,7 @@
 
-const form = document.querySelector("#form");
-const fileInput = document.querySelector("#image_one");
-const previewImages = document.querySelector(".preview-images");
+let form = document.querySelector("#form");
+let fileInput = document.querySelector("#image_one");
+let previewImages = document.querySelector(".preview-images");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -50,8 +50,8 @@ function generatePrevievImages(files) {
 
  $(document).ready(function () {
    $("#submit_btn").click(function () {
-    var form_data = new FormData();
-    var blob = $("#image_one").files;
+    let form_data = new FormData();
+   let blob = $("#image_one").files;
 
     if (blob.length > 0) {
        form_data.append("file", blob);
